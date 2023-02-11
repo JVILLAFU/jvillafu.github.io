@@ -6,55 +6,107 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        background-color: #e2e6e5;
+        display: flex;
+        justify-content: center;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      } 
+      .banner{
+        display: flex;
+        justify-content: center;
+      }
+      .image {
+        width: 90%;
+        height: 400px;
+        object-fit: cover;
+      } 
+      .name {
+        color: #070700;
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons a {
+        color: #080800;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .link {
+        background-color: #020100;
+        color: #f7fafa;
+        text-decoration-color: #e2e6e5;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+      .link a {
+        color: #f8fafa;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
   </head>
   <body>
-    <div class="banner">
-      <img src="/thumbnails/portrait.jpg" alt="random headshot">
-    </div>
-    
-    <div class="name">
-      Personal Profile
-    </div>
-    
-    <div class="social-icons">
-      <a href="https://github.com" target="_blank">
-        GitHub
-      </a>
-    
-      <a href="https://www.linkedin.com" target="_blank">
-        LinkedIn
-      </a>
-    
-      <a href="https://www.instagram.com" target="_blank">
-        Instagram
-      </a>
-    
-      <a href="https://twitter.com" target="_blank">
-        Twitter
-      </a>
-    </div>
-    
-    <div class="link">
-      <img
-        src="/thumbnails/space.jpg">
-    
-      <a target="_blank" href="https://waitbutwhy.com/2020/09/universe.html">How big is space</a>
-    </div>
-    
-    <div class="link">
-      <img src="/thumbnails/lamp.jpg">
-    
-      <a target="_blank"
-        href="https://waitbutwhy.com/2016/03/long-email-delay.html">How to write an email</a>
-    </div>
-    
-    <div class="link">
-      <img
-        src="/thumbnails/city.jpg">
-    
-      <a target="_blank" href="https://waitbutwhy.com/2014/09/odd-things-odd-places-7-travel-posts.html">Life in the city</a>
+    <div class="items">
+      <div class="banner">
+        <img src="/thumbnails/portrait.jpg" alt="random headshot" class="banner-image">
+      </div>
+      
+      <div class="name">
+        Personal Profile
+      </div>
+      
+      <div class="social-icons">
+        <a href="https://github.com" target="_blank">
+          GitHub
+        </a>
+      
+        <a href="https://www.linkedin.com" target="_blank">
+          LinkedIn
+        </a>
+      
+        <a href="https://www.instagram.com" target="_blank">
+          Instagram
+        </a>
+      
+        <a href="https://twitter.com" target="_blank">
+          Twitter
+        </a>
+      </div>
+      
+      <div class="link">
+        <img
+          src="/thumbnails/space.jpg" class="image">
+      
+        <a target="_blank" href="https://waitbutwhy.com/2020/09/universe.html">How big is space</a>
+      </div>
+      
+      <div class="link">
+        <img src="/thumbnails/lamp.jpg" class="image">
+      
+        <a target="_blank"
+          href="https://waitbutwhy.com/2016/03/long-email-delay.html">How to write an email</a>
+      </div>
+      
+      <div class="link">
+        <img
+          src="/thumbnails/city.jpg" class="image">
+      
+        <a target="_blank" href="https://waitbutwhy.com/2014/09/odd-things-odd-places-7-travel-posts.html">Life in the city</a>
+      </div>
     </div>    
   </body>
 </html>
